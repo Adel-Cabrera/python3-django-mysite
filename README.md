@@ -11,3 +11,5 @@ pip3 install django
 pip3 freeze (see dependencies)
 
 python3 manage.py runserver
+
+python manage.py startapp polls (create app)
