@@ -93,3 +93,7 @@ python3 manage.py sqlmigrate polls 0001
 python manage.py createsuperuser
 
 http://127.0.0.1:8000/admin/login/?next=/admin/
+
+## Make the poll app modifiable in the admin
+
+go to => polls/admin.py
