@@ -97,3 +97,34 @@ http://127.0.0.1:8000/admin/login/?next=/admin/
 ## Make the poll app modifiable in the admin
 
 go to => polls/admin.py
+
+## Running tests
+
+wrote test in => polls/tests.py
+
+python manage.py test polls
+
+## Testing views
+
+>python manage.py shell
+>> from django.test.utils import setup_test_environment
+>
+>> setup_test_environment()
+>
+>> from django.test import Client
+>
+>> client = Client()
+>
+>> response = client.get('/') => not found
+>
+>> response.status_code => 404
+>
+>> from django.urls import reverse
+>
+>> response = client.get(reverse('polls:index'))
+>
+>> response.status_code => 200
+>
+>> response.content
+>
+>> response.context['latest_question_list']
