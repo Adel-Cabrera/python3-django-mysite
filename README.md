@@ -24,13 +24,13 @@ python3 manage.py runserver
 
 python3 manage.py startapp polls (create app)
 
+## Create migrations && commit
+
+python3 manage.py makemigrations polls
+
 ## Create tables
 
 python3 manage.py migrate (create tables & permissions)
-
-## Create migrations
-
-python3 manage.py makemigrations polls
 
 ## Commit migrations
 
